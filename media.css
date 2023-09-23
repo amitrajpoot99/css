@@ -1,0 +1,44 @@
+div{
+    height: 100px;
+    width: 100px;
+   background-color: blueviolet;
+}
+@media (width: 600px){
+    div{
+        background-color: red;
+    }
+}
+@media (min-width:610px){
+    div{
+        background-color: black;
+    }
+}
+@media (max-width:500px){
+    div{
+        background-color: yellow;
+    }
+}
+
+@media(min-width:530px) and (max-width:590px){
+    div{
+        background-color: brown;
+    }
+}
+
+.dropdown{
+    display: inline-block;
+    background-color: white;
+
+}
+
+.dropdown-content{
+    display: none;
+    background-color:yellow;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
